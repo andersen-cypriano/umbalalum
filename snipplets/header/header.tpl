@@ -31,7 +31,7 @@
             </div>
         </section>
     {% endif %}
-	<div class="container {% if settings.head_utility == 'searchbox' %}pb-3 pb-md-0{% endif %}">
+	<div class="container {% if settings.head_utility == 'searchbox' %}pb-3 pb-md-0{% endif %}" id="content-header">
 		<div class="{% if not settings.head_fix %}js-nav-logo-bar{% endif %} row no-gutters align-items-center">
 
             {# Menu icon for all mobile combinations except when categories are exposed and logo is centered #}

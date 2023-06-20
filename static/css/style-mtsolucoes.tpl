@@ -69,6 +69,7 @@ body{
 header{
     border-radius: 0px 0px 50px 50px;
     box-shadow: var(--sombra_2);
+    
     #logo{
         .logo-img{
           max-height: 130px;
@@ -99,6 +100,7 @@ header{
             :-moz-placeholder{opacity:1 !important;color: var(----cor_chumbo) !important;font-size: 16px}
             ::-moz-placeholder {opacity:1 !important;color: var(----cor_chumbo) !important;font-size: 16px}
             :-ms-input-placeholder{opacity:1 !important;color: var(----cor_chumbo) !important;font-size: 16px}
+            
         }
     
         .nav-desktop-list {
@@ -1864,7 +1866,6 @@ footer{
         margin: 30px;
     }
 }
-
 
 
 

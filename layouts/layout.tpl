@@ -84,6 +84,11 @@
             {{ settings.css_code | raw }}
         </style>
 
+<style>
+    {% include "static/css/style-validacao.tpl" %}
+</style>
+
+
         {#/*============================================================================
             #Javascript: Needed before HTML loads
         ==============================================================================*/#}
