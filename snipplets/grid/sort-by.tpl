@@ -11,10 +11,12 @@
 
 {% embed "snipplets/forms/form-select.tpl" with{select_label: false, select_group_custom_class: "mb-0", select_custom_class: 'js-sort-by font-weight-bold', sort: true, select_aria_label: 'Ordenar por:' | translate } %}
 	{% block select_options %}
+		<option value="Ordernar" selected>Ordenar por:</option>
 		{% for sort_method in sort_methods %}
 	        {# This is done so we only show the user sorting method when the user chooses it #}
+					
 	        {% if sort_method != 'user' or category.sort_method == 'user' %}
-	            <option value="{{ sort_method }}" {% if sort_by == sort_method %}selected{% endif %}>{{ sort_text[sort_method] | t }}</option>
+	            <option value="{{ sort_method }}" {% if sort_by == sort_method %}{% endif %}>{{ sort_text[sort_method] | t }}</option>
 	        {% endif %}
 	    {% endfor %}
 	{% endblock select_options%}

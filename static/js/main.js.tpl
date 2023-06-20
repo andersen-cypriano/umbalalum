@@ -119,14 +119,7 @@ if (tamanhoViewport < 769) {
       }
     });
 }else{
-  var swiper555 = new Swiper(".js-artigos", {
-    slidesPerView: 3,
-    spaceBetween: 0,
-    navigation: {
-      nextEl: '.js-swiper-artigos-next',
-      prevEl: '.js-swiper-artigos-prev',
-    }
-  });
+  
 }
 $(function () {
   let estoque = $("[property='nuvemshop:stock']").attr("content");
