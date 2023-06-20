@@ -48,8 +48,7 @@
 
 		    	{#  **** Informative banners ****  #}
 				{% include 'snipplets/banner-services/banner-artigos.tpl' %}
-				{#  **** Estampas ****  #}
-				{% include 'snipplets/home/home-estampas.tpl' %}
+				
 
 		    {% elseif section_select == 'categories' %}
 
@@ -100,6 +99,9 @@
 
 				{#  **** Lista Catgorias ****  #}
 				{% include 'snipplets/home/home-lista-categorias-2.tpl' %}
+
+				{#  **** Estampas ****  #}
+				{% include 'snipplets/home/home-estampas.tpl' %}
 
 			{% elseif section_select == 'promotional' %}
 

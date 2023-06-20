@@ -80,14 +80,14 @@
                     {% if product.available and product.display_price and settings.quick_shop %}
                         {% include "snipplets/product/product-quantity.tpl" with {quickshop: true} %}
                     {% endif %}
-                    <div class="box-quant">
+                    <!-- <div class="box-quant">
                         <div class="btn-quant">1</div>
                         <div class="btn-quant">2</div>
                         <div class="btn-quant">3</div>
                         <div class="btn-quant">4</div>
-                    </div>
+                    </div> -->
                     <div class="escolha-tamanho btn btn-primary btn-block">
-                        Ecolha um Tamanho
+                        Escolha um Tamanho
                     </div>
                     {% set state = store.is_catalog ? 'catalog' : (product.available ? product.display_price ? 'cart' : 'contact' : 'nostock') %}
                     {% set texts = {'cart': "Agregar al carrito", 'contact': "Consultar precio", 'nostock': "Sin stock", 'catalog': "Consultar"} %}

@@ -1783,7 +1783,7 @@ footer {
   display: block!important;
 }
 
-
+// ANDERSEN
 header {
   > div.container {
     
@@ -1860,10 +1860,88 @@ header {
     }
   }
 }
-section[data-store="slider-main"] {
-  padding-top: 97px;
+header.compress {
+  .nav-dropdown.nav-main-item.item-with-subitems {
+    margin-top: -5px;
+    .nav-item-container {
+      .nav-list-link {
+        &:before {
+          background-size: 30px;
+        }
+      }
+    }
+  }
 }
 
+section[data-store="slider-main"] {
+  padding-top: 97px;
+  .container-fluid {
+    .section-slider {
+      .js-home-slider {
+        .swiper-wrapper {
+          .swiper-slide {
+            .slider-slide {
+              img {
+                object-fit: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// LISTA DE PROUTOS
+.js-item-product {
+  .item-image {
+    .labels {
+      > div {
+        font-size: 13px!important;
+      }
+    }
+  }
+  .item-description {
+    .tit-prod {
+      font-weight: 600;
+    }
+  }
+  .js-item-variants {
+    .tit-prod {
+      font-weight: 600;
+    }
+    form#product_form {
+      .js-product-variants {}
+      .escolha-tamanho, .js-addtocart {
+        padding: 7px;
+      }
+    }
+  }
+}
+
+.section-estampas-home {
+  padding-top: 3rem;
+}
+
+.section-brands-home {
+  padding: 30px 0!important;
+  > div[class="container"] {
+    width: 100%!important;
+    max-width: 100%!important;
+    padding: 0!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+
+    .swiper-wrapper {
+      .swiper-slide {
+        .disc {
+
+        }
+      }
+    }
+  }
+
+}
 
 
 
