@@ -1021,7 +1021,7 @@ en "Cart"
 es_mx "Carrito"
 
 es "Carrito de Compras"
-pt "Carrinho de Compras"
+pt "Meu carrinho"
 en "Shopping Cart"
 es_mx "Carrito de compras"
 

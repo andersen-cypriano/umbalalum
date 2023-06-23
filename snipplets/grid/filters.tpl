@@ -25,8 +25,8 @@
 {% else %}
 
     {% if product_filters is not empty %}
-
-        <div id="filters" class="visible-when-content-ready" data-store="filters-nav">
+    <div id="filters" class="visible-when-content-ready" data-store="filters-nav">
+            <p class="title-filters">Filtros</p>
 
             {% if not mobile %}
                 <!--<h3 class="title-section mb-2 d-none d-md-block">{{ "Filtrar por" | translate }}</h3>-->

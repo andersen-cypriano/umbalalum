@@ -103,7 +103,7 @@
             {% include "snipplets/svg/credit-card.tpl" with {svg_custom_class : "icon-inline icon-lg svg-icon-primary mr-1"} %}
             {{ "Ver medios de pago" | translate }}
           {% else %}
-            {{ "Ver más detalles" | translate }}
+            {{ "Ver medios de pago" | translate }}
           {% endif %}
         </span>
       </a>

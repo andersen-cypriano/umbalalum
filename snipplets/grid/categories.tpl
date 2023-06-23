@@ -1,7 +1,7 @@
 {% if not mobile %}
     <div class="visible-when-content-ready mb-4 pb-1">
         {% if parent_category and parent_category.id!=0 %}
-            <!--<a href="{{ parent_category.url }}" title="{{ parent_category.name }}" class="category-back d-block{% if filter_categories %} mb-4{% endif %}">{% include "snipplets/svg/chevron-left.tpl" with {svg_custom_class: "icon-inline mr-2 svg-icon-text"} %}{{ parent_category.name }}</a>-->
+            <!-- <a href="{{ parent_category.url }}" title="{{ parent_category.name }}" class="category-back d-block{% if filter_categories %} mb-4{% endif %}">{% include "snipplets/svg/chevron-left.tpl" with {svg_custom_class: "icon-inline mr-2 svg-icon-text"} %}{{ parent_category.name }}</a> -->
         {% endif %}
 {% endif %}
 

@@ -101,7 +101,7 @@
 {% endif %}
 <script>
     var swiper777 = new Swiper(".js-swiper-icones-categorias", {
-        slidesPerView: 8,
+        slidesPerView: 6,
         spaceBetween: 10,
         pagination: {
             el: ".swiper-pagination",
@@ -125,7 +125,7 @@
                 spaceBetween: 20,
             },
             1340: {
-                slidesPerView: 8,
+                slidesPerView: 6,
                 
             },
         },

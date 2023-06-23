@@ -60,7 +60,7 @@
             {# Hidden product form to update item image and variants: Also this is used for quickshop popup #}
             
             <div class="js-item-variants">
-                <div class="js-item-name tit-prod mb-4">{{ product.name }}</div>
+                <p class="js-item-name tit-prod mb-4">{{ product.name }}</p>
                 {% if product.display_price %}
                 <div class="item-price-container mb-1" data-store="product-item-price-{{ product.id }}">
                     <span class="js-compare-price-display price-compare" {% if not product.compare_at_price or not product.display_price
@@ -105,7 +105,7 @@
         {% else %}
         <div class="item-description" data-store="product-item-info-{{ product.id }}">
             <a href="{{ product_url_with_selected_variant }}" title="{{ product.name }}" class="item-link">
-                <div class="js-item-name tit-prod item-name mb-4" data-store="product-item-name-{{ product.id }}">{{ product.name }}</div>
+                <p class="js-item-name tit-prod item-name mb-4" data-store="product-item-name-{{ product.id }}">{{ product.name }}</p>
                 {% if product.display_price %}
                     <div class="item-price-container mb-1" data-store="product-item-price-{{ product.id }}">
                         <span class="js-compare-price-display price-compare" {% if not product.compare_at_price or not product.display_price %}style="display:none;"{% else %}style="display:inline-block;"{% endif %}>

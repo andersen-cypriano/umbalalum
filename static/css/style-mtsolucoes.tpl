@@ -37,6 +37,7 @@ div::-webkit-scrollbar-thumb {background-color: var(--cor_chumbo) !important;bor
 }
 body{
     font-family: var(--font_1);
+    overflow-x: hidden;
 }
 .no-pad{
     padding-left:0 !important ;
@@ -377,7 +378,8 @@ header{
             position: absolute;
             bottom: 0;
             z-index: 1;
-            background:#fff url("{{ 'images/slider-bottom.png' | static_url }}") no-repeat 50px bottom / 100%;
+            background: white url("{{ 'images/slider-bottom.png' | static_url }}") left bottom no-repeat!important;
+            
             
         }
     }
