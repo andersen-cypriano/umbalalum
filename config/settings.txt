@@ -566,6 +566,30 @@ Página de inicio
 	i18n_input
 		name = banner_03_url
 		description = Link
+	collapse
+		title = Banner Sessao 1
+	subtitle
+		subtitle = Imágenes para computadoras
+	gallery
+		name = banner_sessao1_desktop
+		gallery_image = Agregar imagen
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 1100
+		gallery_height = 300
+		gallery_more_info = true
+	subtitle
+		subtitle = Imágenes para celulares
+	description
+		description = Mejorá la calidad y velocidad de carga con esta opción
+	gallery
+		name = banner_sessao1_mobile
+		gallery_image = Agregar imagen
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 590
+		gallery_width = 390
+		gallery_more_info = true
+	subtitle
+		subtitle = <a target='_blank' data-toggle-info='show-on_slider_mobile-inactive' href='https://ayuda.tiendanube.com/es/articles/3297783-como-usar-el-carrusel-de-imagenes-para-las-plantillas-idea-bahia-y-amazonas'>¿Cómo diseñar las imágenes para tu carrusel?</a>
 
 	collapse
 		title = Carrossel de Depoimentos
