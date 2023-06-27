@@ -73,7 +73,7 @@
 
 						{% embed "snipplets/forms/form-input.tpl" with{input_for: 'password', type_password: true, input_name: 'password', input_custom_class: 'js-account-input', input_help: true, input_help_link: store.customer_reset_password_url, input_link_class: 'btn-link-primary font-small float-right mb-4 mt-3n', input_placeholder: 'Senha', input_required: true } %}
 						
-						{% block input_help_text %}{{ 'Esqueceu minha senha? '}}{{ 'Clique aqui'}}{% endblock input_help_text %}
+						{% block input_help_text %}{{ 'Esqueci minha senha '}}{% endblock input_help_text %}
 
 						{% endembed %}
 					

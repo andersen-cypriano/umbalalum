@@ -32,37 +32,39 @@
 			{# Tooltip for quick login on AR stores #}
 			{% include "snipplets/tooltip-login.tpl" with {desktop: "true"} %}
 		{% endif %}
-		<div class="js-utilities-item">
-			<div class="utility-head text-center">
-				{% include "snipplets/svg/baby-boy_profile.tpl" with {svg_custom_class: "icon-inline icon-2x " ~ icon_desktop_class} %}
-				{% include "snipplets/svg/baby-boy_point.tpl" with {svg_custom_class: "icon-inline icon-2x " ~ icon_desktop_class} %}
-				{% if store.country == 'AR'%}
-					{# Notification tooltip for quick login on AR stores #}
-					<a data-toggle="#quick-login" class="js-modal-open js-quick-login-badge" style="display: none;">
-						<div class="badge badge-overlap swing"></div>
-					</a>
-				{% endif %}
-				<span class="utility-name transition-soft d-block {% if settings.icons_solid %} font-weight-bold{% endif %} {% if settings.icons_size_desktop == 'small' %}d-md-inline-block pt-0 ml-1{% endif %}">
+		<a href="/account/login/">
+			<div class="js-utilities-item">
+				<div class="utility-head text-center">
+					{% include "snipplets/svg/baby-boy_profile.tpl" with {svg_custom_class: "icon-inline icon-2x " ~ icon_desktop_class} %}
+					{% include "snipplets/svg/baby-boy_point.tpl" with {svg_custom_class: "icon-inline icon-2x " ~ icon_desktop_class} %}
+					{% if store.country == 'AR'%}
+						{# Notification tooltip for quick login on AR stores #}
+						<a data-toggle="#quick-login" class="js-modal-open js-quick-login-badge" style="display: none;">
+							<div class="badge badge-overlap swing"></div>
+						</a>
+					{% endif %}
+					<span class="utility-name transition-soft d-block {% if settings.icons_solid %} font-weight-bold{% endif %} {% if settings.icons_size_desktop == 'small' %}d-md-inline-block pt-0 ml-1{% endif %}">
+						{% if not customer %}
+							Entrar
+						{% else %}
+							{% set customer_short_name = customer.name|split(' ')|slice(0, 1)|join %} 
+							{{ "¡Hola, {1}!" | t(customer_short_name) }}
+						{% endif %}
+					</span>
+				</div>
+				<!-- <ul class="js-subutility-list nav-dropdown-content subutility-list">
 					{% if not customer %}
-						Entrar
-					{% else %}
-						{% set customer_short_name = customer.name|split(' ')|slice(0, 1)|join %} 
-						{{ "¡Hola, {1}!" | t(customer_short_name) }}
+						{% if 'mandatory' not in store.customer_accounts %}
+							<li class="subutility-list-item nav-accounts-item">{{ "Crear cuenta" | translate | a_tag(store.customer_register_url, '', 'nav-accounts-link') }}</li>
+						{% endif %}
+							<li class="subutility-list-item nav-accounts-item">{{ "Iniciar sesión" | translate | a_tag(store.customer_login_url, '', 'js-login nav-accounts-link') }}</li>
+						{% else %}
+						<li class="subutility-list-item nav-accounts-item"><a href="/account" title="" class="nav-accounts-link">Minha conta</a></li>
+						<li class="subutility-list-item nav-accounts-item">{{ "Cerrar sesión" | translate | a_tag(store.customer_logout_url, '', 'nav-accounts-link') }}</li>
 					{% endif %}
-				</span>
+				</ul> -->
 			</div>
-			<ul class="js-subutility-list nav-dropdown-content subutility-list">
-				{% if not customer %}
-					{% if 'mandatory' not in store.customer_accounts %}
-						<li class="subutility-list-item nav-accounts-item">{{ "Crear cuenta" | translate | a_tag(store.customer_register_url, '', 'nav-accounts-link') }}</li>
-					{% endif %}
-						<li class="subutility-list-item nav-accounts-item">{{ "Iniciar sesión" | translate | a_tag(store.customer_login_url, '', 'js-login nav-accounts-link') }}</li>
-					{% else %}
-					<li class="subutility-list-item nav-accounts-item"><a href="/account" title="" class="nav-accounts-link">Minha conta</a></li>
-					<li class="subutility-list-item nav-accounts-item">{{ "Cerrar sesión" | translate | a_tag(store.customer_logout_url, '', 'nav-accounts-link') }}</li>
-				{% endif %}
-			</ul>
-		</div>
+		</a>
 	</div>	
 	{% if not store.is_catalog %}    
 	<div class="utilities-item {% if settings.icons_size_desktop == 'small' %}w-md-auto ml-md-4{% endif %}">

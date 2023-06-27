@@ -1328,3 +1328,56 @@ a {
 #shipping-more-options span svg{
   fill:#A44F73;
 }
+
+
+// CHECKOUT ANDERSEN
+.headbar {
+  .headbar-logo-img {
+    max-height: 160px;
+  }
+}
+div#main-column {
+  .form-step {
+    form {
+      #contact-info {}
+      .panel {
+        .shipping-calculator {
+          > .panel-header-button {
+            border: 0!important;
+            span {
+              color: #FFF!important;
+              font-size: 14px;
+            }
+          }
+        }
+        #address-form-section {
+          .form-options-content {
+            .form-options-label {
+              font-size: 13px!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+div#secondary-column {
+  .summary {
+    .summary-details {
+      .summary-coupon {
+        padding-top: 20px;
+        > div {
+          background: #A44F73;
+          span {
+            color: #FFF;
+          }
+          svg {
+            path {
+              fill: #FFF
+            }
+          }
+        }
+      }
+    }
+  }
+}

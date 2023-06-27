@@ -12,7 +12,7 @@
 				                <div class="swiper-slide slide-container brands-slider">
 				                	<div class="disc">
 											<p>{{ slide.link }}</p>		
-				                		<img src="{{ 'images/empty-placeholder.png' | static_url }}" data-src="{{ slide.image | static_url }}" class="lazyload brand-image" alt="{{ 'Marca {1} de' | translate(loop.index) }} {{ store.name }}">
+				                		<img src="{{ 'images/empty-placeholder.png' | static_url }}" data-src="{{ slide.image | static_url }}" class="lazyload" alt="{{ 'Marca {1} de' | translate(loop.index) }} {{ store.name }}">
 				            		</div>
 				            	</div>
 					        {% endfor %}
