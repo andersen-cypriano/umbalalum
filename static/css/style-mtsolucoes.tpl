@@ -489,6 +489,7 @@ header{
     }
     
     .escolha-tamanho{
+        display: none;
         margin-bottom: -43px;
         position: relative;
         background-color: var(--cor_creme) !important;
@@ -1868,6 +1869,8 @@ footer{
         margin: 30px;
     }
 }
+
+
 
 
 

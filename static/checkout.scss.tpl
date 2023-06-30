@@ -1335,7 +1335,18 @@ a {
   .headbar-logo-img {
     max-height: 160px;
   }
+  
 }
+.main-container {
+    div[role="menubar"] {
+      background: transparent;
+      > .container {
+        .summary-total {
+          background: transparent;  
+        }
+      }
+    }
+  }
 div#main-column {
   .form-step {
     form {

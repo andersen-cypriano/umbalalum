@@ -58,7 +58,7 @@
 					{{'Filtros ' | translate }}
 				{% endblock %}
 				{% block modal_body %}
-					{% include "snipplets/grid/categories.tpl" with {mobile: true} %}
+					
 				   	{% include "snipplets/grid/filters.tpl" with {mobile: true} %}
 					<div class="js-filters-overlay filters-overlay" style="display: none;">
 						<div class="filters-updating-message">
@@ -88,9 +88,7 @@
 		<div class="row">
 			{% if has_filters_available %} 
 				<div class="col col-md-2 d-none pr-0 d-md-block visible-when-content-ready content-filtros">
-					{% if filter_categories is not empty %}
-						{% include "snipplets/grid/categories.tpl" %}
-					{% endif %}
+					
 					{% if product_filters is not empty %}	   
 						{% include "snipplets/grid/filters.tpl" %}
 					{% endif %}

@@ -2,7 +2,7 @@
 	{% set has_size_variations = false %}
 	{% for variation in product.variations %}
 
-		<div class="js-product-variants-group select-radio  d-none {% if variation.name in ['Talle', 'Talla', 'Tamanho', 'Size'] %}d-block{% endif %} {% if variation.name in ['Color', 'Cor'] %}js-color-variants-container{% endif %} {% if quickshop %}col-12 {% else %} col-12 {% if loop.length == 3 %} col-md-4 {% else %} col-md-12{% endif %}{% endif %}">
+		<div class="js-product-variants-group select-radio  d-none {% if variation.name in ['Talle', 'Talla', 'Tamanho', 'Size'] %} content-variant-tamanho d-block{% endif %} {% if variation.name in ['Color', 'Cor'] %}js-color-variants-container{% endif %} {% if quickshop %}col-12 {% else %} col-12 {% if loop.length == 3 %} col-md-4 {% else %} col-md-12{% endif %}{% endif %}">
 			{% if quickshop %}
 				{% embed "snipplets/forms/form-select.tpl" with{select_label: true, select_label_name: '' ~ variation.name ~ '', select_for: 'variation_' ~ loop.index , select_id: 'variation_' ~ loop.index, select_name: 'variation' ~ '[' ~ variation.id ~ ']', select_group_custom_class: 'form-group-small mb-2', select_custom_class: 'js-variation-option js-refresh-installment-data form-control-small', select_label_custom_class:'mb-1'} %}
 					{% block select_options %}
@@ -26,6 +26,10 @@
 			{% set has_size_variations = true %}
 		{% endif %}
 	{% endfor %}
+		
+
+
+
 	{% if show_size_guide and settings.size_guide_url and has_size_variations %}
 		{% set has_size_guide_page_finded = false %}
 		{% set size_guide_url_handle = settings.size_guide_url | trim('/') | split('/') | last %}

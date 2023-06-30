@@ -32,7 +32,7 @@
 			{# Tooltip for quick login on AR stores #}
 			{% include "snipplets/tooltip-login.tpl" with {desktop: "true"} %}
 		{% endif %}
-		<a href="/account/login/">
+		<a href="/account/">
 			<div class="js-utilities-item">
 				<div class="utility-head text-center">
 					{% include "snipplets/svg/baby-boy_profile.tpl" with {svg_custom_class: "icon-inline icon-2x " ~ icon_desktop_class} %}
@@ -67,12 +67,9 @@
 		</a>
 	</div>	
 	{% if not store.is_catalog %}    
-	<div class="utilities-item {% if settings.icons_size_desktop == 'small' %}w-md-auto ml-md-4{% endif %}">
+	<div onclick="checkLogin()" class="utilities-item btn-utilities-favorite {% if settings.icons_size_desktop == 'small' %}w-md-auto ml-md-4{% endif %}">
 		<div class="transition-soft utility-head text-center">
-			<a href="#">
-				{% include "snipplets/svg/heart-2.tpl" with {svg_custom_class: "icon-inline mr-1 icon-lg svg-icon-primary"} %}
-				<span class="utility-name transition-soft">Instalar<br>Aplicativo!!!!</span>
-			</a>	
+			{% include "snipplets/svg/heart-2.tpl" with {svg_custom_class: "icon-inline mr-1 icon-lg svg-icon-primary"} %}	
 		</div>
 	</div>
 	<div class="utilities-item {% if settings.icons_size_desktop == 'small' %}w-md-auto ml-md-4{% endif %}">

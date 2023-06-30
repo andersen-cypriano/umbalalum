@@ -2455,5 +2455,4 @@ DOMContentLoaded.addEventOrExecute(() => {
         }
 
     {% endif %}
-
 });

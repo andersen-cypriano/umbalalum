@@ -18,7 +18,7 @@
 {% endif %}
 
 <div class="js-item-product {% if slide_item %}js-item-slide swiper-slide{% else %}col{% if columns == 2 %}-6 col-md-3{% else %}-12 col-md-4{% endif %}{% endif %} item item-product{% if not product.display_price %} no-price{% endif %}" data-product-type="list" data-product-id="{{ product.id }}" data-store="product-item-{{ product.id }}">
-    <!-- AS VARIAÇÕES ESTAO SENDO REMOVIDAS VIA JS VIA FUNÇÃO checkVariantTamanho() qualquer erro na compra deve-se ao fato de uma variavel nao estar sendo selecionada, por isso removemos o elemento do DOM, por hora removemos apenas o COR, caso exista outra nova variação, deve-se remove-la do DOM ou tornar ele visivel para seleção.  -->
+
     {% if settings.quick_shop or settings.product_color_variants %}
         <div class="js-product-container js-quickshop-container {% if product.variations %}js-quickshop-has-variants{% endif %}" data-variants="{{ product.variants_object | json_encode }}" data-quickshop-id="quick{{ product.id }}{% if slide_item and section_name %}-{{ section_name }}{% endif %}">
     {% endif %}
