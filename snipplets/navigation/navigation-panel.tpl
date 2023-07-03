@@ -15,12 +15,9 @@
                 {% include "snipplets/svg/baby-boy_profile.tpl" with {svg_custom_class: "icon-inline icon-2x mr-2 ml-3"} %}
                 {% if 'mandatory' not in store.customer_accounts %}
                     <!--<li class="nav-accounts-item">{{ "Crear cuenta" | translate | a_tag(store.customer_register_url, '', 'nav-accounts-link') }}</li>-->
-                    <li class="nav-accounts-item">
-                        {{ "Clique aqui e faça seu Cadasro" | translate | a_tag(store.customer_register_url, '', 'nav-accounts-link') }}
-                    </li>
                 {% endif %}
-                <li class="nav-accounts-item position-relative">
-                    {{ "Clique aqui e faça seu login" | translate | a_tag(store.customer_login_url, '', 'js-login nav-accounts-link') }}            
+                <li class="nav-accounts-item position-relative" style="padding-left: 0;margin-left: 0;">
+                    {{ "Entrar" | translate | a_tag(store.customer_login_url, '', 'js-login nav-accounts-link') }}            
                     {% if store.country == 'AR'%}
                         {# Notification badge for quick login on AR stores #}
                         <a data-toggle="#quick-login" class="js-modal-open js-quick-login-badge" style="display: none;">
@@ -33,7 +30,7 @@
             {% else %}
                 {% include "snipplets/svg/baby-boy_profile.tpl" with {svg_custom_class: "icon-inline icon-2x-half mr-2 ml-3"} %}
                 <li>
-                    <strong class="nav-accounts-item mb-0">{{ "Olá Umbala<b>LOVER!</b>" | t(customer.name) }}</strong>
+                    <strong class="nav-accounts-item mb-0">Olá, {{ customer.name }}</strong>
                     <ul class="d-flex m-0 p-0">
                         <li class="nav-accounts-item">{{ "Mi cuenta" | translate | a_tag(store.customer_home_url, '', 'nav-accounts-link') }}</li>
                         <li class="nav-accounts-item">{{ "Cerrar sesión" | translate | a_tag(store.customer_logout_url, '', 'nav-accounts-link') }}</li>

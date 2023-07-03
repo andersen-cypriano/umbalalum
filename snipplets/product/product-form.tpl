@@ -27,7 +27,7 @@
         {% include 'snipplets/social/social-share.tpl' %}
         <div id="estoque-produto" class="col-12">
             <img src="{{ 'images/sino.png' | static_url }}" class="icon lazyload"  width="27" height="31">
-            <span></span style="padding-right: 10px">peças em estoque</div>
+            <span></span style="padding-right: 10px">&nbsp;peças em estoque</div>
     </span>
 </div>
 

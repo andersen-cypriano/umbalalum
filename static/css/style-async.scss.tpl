@@ -1963,6 +1963,9 @@ section[data-store="slider-main"] {
   padding-top: 97px;
   .container-fluid {
     .section-slider {
+      &::before {
+        background: white url("{{ 'images/barra_verde.svg' | static_url }}") top repeat-x!important;
+      }
       .js-home-slider {
         .swiper-wrapper {
           .swiper-slide {
@@ -2178,11 +2181,12 @@ section[data-store="slider-main"] {
 .js-category-controls {
   .breadcrumbs {
     .crumb {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 19px!important;
       color: #4D4D4D;
     }
     .crumb.active {
+      font-weight: 600;
     }
   }
   > div {
@@ -2275,11 +2279,12 @@ section.category-body {
   .breadcrumbs {
     margin-bottom: 40px;
     .crumb {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 19px!important;
       color: #4D4D4D;
     }
     .crumb.active {
+      font-weight: 600;
     }
   }
   .section-single-product {
@@ -2416,6 +2421,9 @@ footer {
           fill: #000;
         }
       }
+      .endereco {
+        padding-left: 20px;
+      }
     }
     h4.h3 {
       display: none;
@@ -2424,6 +2432,15 @@ footer {
   .footer-legal.copyright {
     font-size: 15px!important;
   }
+}
+
+
+// CONTATO
+#contact-form {
+  input, textarea {
+    font-family: var(--font_1)!important;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -2513,7 +2530,55 @@ footer {
     }
   }
 
+  // ALERTA COOKIES
+  .js-notification-cookie-banner {
+    > .mb-4 {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  .section-featured-home, .section-featured-home {
+    .js-item-product {
+      border: 1px solid rgba($color: #000000, $alpha: .05);
+    }
+  }
+
+
+
   // MAIN MENU
+  .nav-primary {
+    > ul.nav-list {
+      > li {
+        &:nth-of-type(1) {
+          .js-pages-accordion {
+            a[href="https://umbalalum.lojavirtualnuvem.com.br/outlet/"] {
+              display: none!important;
+            }
+          }
+        }
+      }
+    } 
+  }
+
+
+  .nav-secondary {
+    #wl-menu-item-id {
+      display: none!important;
+    }
+    > ul.nav-account {
+      svg {
+        position: relative;
+        margin-right: 1.2rem;
+      }
+      .nav-accounts-item {
+        padding-left: 30px!important;
+        a {
+          color: #6a976a!important;
+        }
+      }
+    }
+  }
   #nav-hamburger {
     .modal-with-fixed-footer {
       .modal-scrollable-area {
@@ -2603,4 +2668,16 @@ footer {
       }
     }
   }
+
+  // PAGINA DE PRODUTO
+  .section-single-product {
+    .thumb-mobile {
+      padding-top: 10px!important;
+      gap: 1rem;
+      > a {
+        margin: 0!important;
+      }
+    }
+  }
+  
 }

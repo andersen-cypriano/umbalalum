@@ -1,5 +1,5 @@
 {% if settings.welcome_message %}
-    <section class="section-welcome-home" style="background-color: {{ settings.welcome_message2 }};">
+    <section class="section-welcome-home teste" style="background-color: {{ settings.welcome_message2 }};">
         <div class="container">
             <div class="row">
                 <a href="{{ settings.welcome_message_link | setting_url }}" title="{{ store.name }}">

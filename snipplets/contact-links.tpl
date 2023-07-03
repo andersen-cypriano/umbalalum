@@ -9,7 +9,7 @@
 		<li class="contact-item email">{% include "snipplets/svg/email.tpl" with {svg_custom_class: "icon-inline icon-lg icon-w contact-item-icon"} %}<a href="mailto:{{ store.email }}" class="contact-link">{{ store.email }}</a></li>
 	{% endif %}
 	{% if store.address and not is_order_cancellation %}
-		<li class="contact-item endereco"><!--{% include "snipplets/svg/map-marker-alt.tpl" with {svg_custom_class: "icon-inline icon-lg icon-w contact-item-icon"} %}-->{{ store.address }}</li>
+		<li class="contact-item endereco">{% include "snipplets/svg/map-marker-alt.tpl" with {svg_custom_class: "icon-inline icon-lg icon-w contact-item-icon"} %}{{ store.address }}</li>
 	{% endif %}
 	{% if store.blog %}
 		<li class="contact-item blog">{% include "snipplets/svg/comments.tpl" with {svg_custom_class: "icon-inline icon-lg icon-w contact-item-icon"} %}<a target="_blank" href="{{ store.blog }}" class="contact-link">{{ "Visita nuestro Blog!" | translate }}</a></li>

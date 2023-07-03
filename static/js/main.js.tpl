@@ -164,3 +164,12 @@ function checkVariantTamanho () {
   })
 }
 document.querySelector('.content-variant-tamanho') || document.querySelector('.js-color-variants-container') ? checkVariantTamanho () : null;
+
+// SEARCH PAGE
+function addSearchWord () {
+  const word = window.location.href.split('?q=')[1];
+  const pharse = document.querySelector('.page-header > .container .text-primary').textContent + ` para ${word}`;
+  document.querySelector('.page-header > .container .text-primary').textContent = pharse;
+}
+
+window.location.pathname == '/search/' ? addSearchWord () : null;
