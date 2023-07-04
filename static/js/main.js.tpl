@@ -173,3 +173,63 @@ function addSearchWord () {
 }
 
 window.location.pathname == '/search/' ? addSearchWord () : null;
+
+
+// CREATE CONTENT VARIATION TO NEW ITEMS ON DOM AFTER SCROLL INFINIT
+const createListVariants = (element, content) => {
+  const newContentListVariants = document.createElement("div");
+  newContentListVariants.classList.add("select-items");
+  newContentListVariants.classList.add("select-hide");
+
+  element.forEach((element) => {
+    const newItem = document.createElement("div");
+    newItem.innerText = element.value;
+
+    newItem.addEventListener("click", (e) => {
+      Array.from(newContentListVariants.children).forEach(element => {
+        element.classList.remove('same-as-selected')
+      })
+      content.firstElementChild.children[1].value = element.value;
+      e.target.classList.add('same-as-selected');
+      newContentListVariants.parentElement.parentElement.nextElementSibling.classList.remove('desativado');
+      newContentListVariants.parentElement.parentElement.nextElementSibling.value = 'Comprar';
+    });
+    newContentListVariants.appendChild(newItem);
+  });
+  newContentListVariants.firstElementChild.remove();
+  content.appendChild(newContentListVariants);
+  newContentListVariants.parentElement.parentElement.nextElementSibling.classList.add('desativado');
+  newContentListVariants.parentElement.parentElement.nextElementSibling.value = 'Escolha o tamanho';
+};
+
+const checkNewItems = () => {
+  document.querySelectorAll(".content-variant-tamanho").forEach((element) => {
+    element.children.length == 1
+      ? createListVariants(
+          Array.from(element.firstElementChild.children[1]),
+          element
+        )
+      : null;
+  });
+};
+
+const startObserve = () => {
+  const productListTarget = document.querySelector(
+    "section.category-body .js-product-table"
+  );
+  
+  // cria uma nova instância de observador
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      checkNewItems();
+    });
+  });
+  
+  // configuração do observador:
+  const config = { childList: true };
+  observer.observe(productListTarget, config);
+}
+
+document.querySelector(
+  "section.category-body .js-product-table"
+) ? startObserve() : null;
