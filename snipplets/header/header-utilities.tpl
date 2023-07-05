@@ -52,7 +52,7 @@
 						{% endif %}
 					</span>
 				</div>
-				<!-- <ul class="js-subutility-list nav-dropdown-content subutility-list">
+				<ul class="js-subutility-list nav-dropdown-content subutility-list">
 					{% if not customer %}
 						{% if 'mandatory' not in store.customer_accounts %}
 							<li class="subutility-list-item nav-accounts-item">{{ "Crear cuenta" | translate | a_tag(store.customer_register_url, '', 'nav-accounts-link') }}</li>
@@ -62,7 +62,7 @@
 						<li class="subutility-list-item nav-accounts-item"><a href="/account" title="" class="nav-accounts-link">Minha conta</a></li>
 						<li class="subutility-list-item nav-accounts-item">{{ "Cerrar sesión" | translate | a_tag(store.customer_logout_url, '', 'nav-accounts-link') }}</li>
 					{% endif %}
-				</ul> -->
+				</ul>
 			</div>
 		</a>
 	</div>	

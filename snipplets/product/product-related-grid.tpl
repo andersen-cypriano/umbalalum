@@ -65,8 +65,8 @@
                     </div>
                 </div>
             </div>
-            <div class="js-swiper-related-prev swiper-button-prev d-none d-md-block  svg-circle-big svg-icon-text{% if settings.icons_solid %} svg-solid{% endif %}">{% include "snipplets/svg/arrow-dropright-circle-2.tpl" with {svg_custom_class: "icon-inline icon-2x mr-1"} %}</div>
-            <div class="js-swiper-related-next swiper-button-next d-none d-md-block  svg-circle-big svg-icon-text{% if settings.icons_solid %} svg-solid{% endif %}">{% include "snipplets/svg/arrow-dropright-circle.tpl" with {svg_custom_class: "icon-inline icon-2x ml-1"} %}</div>
+            <div class="js-swiper-related-prev swiper-button-prev d-md-block  svg-circle-big svg-icon-text{% if settings.icons_solid %} svg-solid{% endif %}">{% include "snipplets/svg/arrow-dropright-circle-2.tpl" with {svg_custom_class: "icon-inline icon-2x mr-1"} %}</div>
+            <div class="js-swiper-related-next swiper-button-next d-md-block  svg-circle-big svg-icon-text{% if settings.icons_solid %} svg-solid{% endif %}">{% include "snipplets/svg/arrow-dropright-circle.tpl" with {svg_custom_class: "icon-inline icon-2x ml-1"} %}</div>
             
         {% endif %}
     </div>

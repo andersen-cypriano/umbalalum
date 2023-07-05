@@ -1822,9 +1822,7 @@ header {
             .utilities-item {
               margin: 0;
               &:nth-of-type(1){
-                .nav-dropdown-content {
-                  display: none;
-                }
+                
               }
               &:nth-of-type(2){
                 .utility-name {
@@ -1836,6 +1834,10 @@ header {
                 .valor-carrinho {
                   font-size: 14px;
                 }
+              }
+              .nav-dropdown-content {
+                border-top: 0!important;
+                border-radius: 0!important;
               }
             }
             // Default favorite button
@@ -1883,12 +1885,50 @@ header {
                   padding: 0 15px!important;
                   &:nth-of-type(1) {
                     // background-color: red!important;
+                    
                   }
                   &:nth-of-type(2) {
                     // background-color: green!important;
+                    > ul.nav-list-accordion {
+                      > li {
+                        width: 60%!important;
+                        max-width: 60%!important;
+                        &:hover {
+                          background-color: #D9D9D9!important;
+                          border-radius: 5px!important;
+                          a {
+                          }
+                        }
+                        > .nav-item-container  {
+                          .nav-list-link {
+                            color: var(--cor_chumbo)!important;
+                          }
+                        }
+                        > a {
+                          display: block;
+                        }
+                      }
+                    }
+                    
                   }
                   &:nth-of-type(3) {
                     // background-color: black!important;
+                    > ul.nav-list-accordion {
+                      > li {
+                        width: 60%!important;
+                        max-width: 60%!important;
+                        &:hover {
+                          background-color: var(--cor_azul_1);
+                          border-radius: 5px;
+                          a {
+                          }
+                        }
+                        a {
+                          
+                          display: block;
+                        }
+                      }
+                    }
                   }
                   &:nth-of-type(4) {
                     display: none;
@@ -2035,6 +2075,9 @@ section[data-store="slider-main"] {
       font-weight: 600;
     }
     form#product_form {
+      .alert {
+        margin-top: 20px;
+      }
       .js-product-variants {
         .js-product-variants-group {
           .select-items {
@@ -2046,6 +2089,7 @@ section[data-store="slider-main"] {
       }
       .escolha-tamanho, .js-addtocart {
         padding: 7px;
+        float: none;
       }
       .desativado {
         cursor: not-allowed;
@@ -2558,7 +2602,10 @@ footer {
       }
     }
   }
-
+  // MAIN BANNER
+  section[data-store="slider-main"] {
+    padding-top: 48px!important;
+  }
   // ALERTA COOKIES
   .js-notification-cookie-banner {
     > .mb-4 {
@@ -2578,14 +2625,32 @@ footer {
   // MAIN MENU
   .nav-primary {
     > ul.nav-list {
-      > li {
-        &:nth-of-type(1) {
-          .js-pages-accordion {
-            a[href="https://umbalalum.lojavirtualnuvem.com.br/outlet/"] {
-              display: none!important;
-            }
+      > li.nav-item {
+        > a.nav-list-link {
+          color: var(--cor_chumbo);
+        }
+        .nav-item-desktop {}
+        .nav-item-container {
+          a {
+            background-color: transparent!important;
+            color: var(--cor_chumbo);
           }
         }
+        > ul.js-pages-accordion {
+          a.nav-list-link {
+            color: var(--cor_chumbo);
+          } 
+        }
+        &:nth-of-type(1) {
+          a[href="https://umbalalum.lojavirtualnuvem.com.br/outlet/"] {
+            display: none!important;
+          }
+          a[href="https://www.umbalalum.com/outlet/"] {
+            display: none!important;
+          }
+
+        }
+        
       }
     } 
   }

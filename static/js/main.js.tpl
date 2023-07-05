@@ -138,7 +138,7 @@ function activeButtonsFilters () {
   })
 }
 
-dataLayer[1]?.ecommerce.item_list_id == 'categories' ?  activeButtonsFilters () : null;
+document.querySelector('.abre-fecha') ?  activeButtonsFilters () : null;
 
 function addListenerOnButtonSize (){
   document.querySelectorAll('.content-variant-tamanho .select-items > div').forEach(element => {
