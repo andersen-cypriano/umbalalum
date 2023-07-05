@@ -38,6 +38,7 @@
 
 		        {#  **** Featured products ****  #}
 				{% include 'snipplets/home/home-featured-products.tpl' with {'has_featured': true} %}
+				
 
 		    {% elseif section_select == 'informatives' %}
 
@@ -56,14 +57,15 @@
 				{% include 'snipplets/home/home-banners.tpl' with {'textoverimage': false} %}
 
 			{% elseif section_select == 'welcome' %}
-
+				{% include 'snipplets/home/home-banner-sessao-1.tpl' %}
 				{#  **** Welcome message ****  #}
-				{% include 'snipplets/home/home-welcome-message.tpl' %}
-			
-			{% elseif section_select == 'imagem_texto' %}
-
+				
+				{% elseif section_select == 'imagem_texto' %}
+				
 				{#  **** Welcome message ****  #}
-				{% include 'snipplets/home/home-secao-imagem-texto.tpl' %}
+				{% include 'snipplets/home/home-banner-sessao-2.tpl' %}
+				
+				
 
 			{% elseif section_select == 'brands' %}
 

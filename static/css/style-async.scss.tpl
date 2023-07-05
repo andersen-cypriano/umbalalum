@@ -2078,6 +2078,16 @@ section[data-store="slider-main"] {
   
 }
 
+
+// BANNER SESSAO 1
+.banner-sessao-1, .banner-sessao-2 {
+  width: 100%;
+  margin-bottom: 50px;
+  img {
+    width: 100%;
+  }
+}
+
 .welcome-home-2, .section-welcome-home {
   padding: 0;
   > .container {
@@ -2443,7 +2453,26 @@ footer {
 
 }
 
+
+// HIDDEN
+.banner-img-desktop {
+  display: block;
+  width: 100%;
+}
+.banner-img-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  // HIDDEN
+  .banner-img-desktop {
+    display: none!important;
+  }
+  .banner-img-mobile {
+    display: block!important;
+    width: 100%;
+  }
+
   header {
     .section-topbar {
       + .container {

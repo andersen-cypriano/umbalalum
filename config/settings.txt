@@ -583,12 +583,33 @@ Página de inicio
 	image
 		original = banner_sessao1_mobile.jpg
 		title = Icone ou Imagem 768px X 300px
-		width = 768
-		height = 300
+		width = 386
+		height = 906
 	i18n_input
 		name = banner_sessao1_link
 		description = Link
-
+	collapse
+		title = BANNER SESSAO 2
+	subtitle
+		subtitle = Imagem Desktop
+	image
+		original = banner_sessao2_desktop.jpg
+		title = Icone ou Imagem 1359px X 530px
+		width = 1359
+		height = 530
+	i18n_input
+		name = banner_sessao2_link
+		description = Link
+	subtitle
+		subtitle = Imagem Mobile
+	image
+		original = banner_sessao2_mobile.jpg
+		title = Icone ou Imagem 386px X 906px
+		width = 386
+		height = 906
+	i18n_input
+		name = banner_sessao2_link
+		description = Link
 	collapse
 		title = Carrossel de Depoimentos
 	gallery
