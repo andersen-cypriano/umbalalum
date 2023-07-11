@@ -116,7 +116,7 @@
         {# Structured data to provide information for Google about the page content #}
 
         {% include 'snipplets/structured_data/webpage-structured-data.tpl' %}
-
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     </head>
     <body {% if settings.head_fix %}class="js-head-offset head-offset"{% endif %}>
         {# Facebook comments on product page #}
@@ -204,7 +204,7 @@
         ==============================================================================*/#}
 
         {# Javascript used in the store #}
-
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript">
 
             {# Libraries that do NOT depend on other libraries, e.g: Jquery #}
@@ -216,7 +216,7 @@
             LS.ready.then(function(){
 
                 {# Libraries that requires Jquery to work #}
-
+                
                 {% include "static/js/external.js.tpl" %}
 
                 {# Specific store JS functions: product variants, cart, shipping, etc #}
@@ -265,5 +265,8 @@
                 }
             });
         </script>
+        
+        
+                        
     </body>
 </html>

@@ -920,6 +920,66 @@ Página de inicio
 		gallery_width = 260
 		gallery_height = 260
 	collapse
+		title = SESSÃO ESTAMPAS.
+	description
+		description = Lista tipos de estampas
+	checkbox
+		name = lista_estampa_true
+		description = Exibir sliders com escolha de estampas
+	i18n_input
+		name = secao_estampa_title
+		description = Título da Seção
+	i18n_input
+		name = slider_lista_estampa_title
+		description = Título da Lista
+	gallery
+		name = lista_slider_img_estampa_01
+		gallery_image = Agregar imagen
+		gallery_titulo = Agregar Titulo
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 260
+		gallery_height = 260
+	i18n_input
+		name = slider_lista_estampa_title_2
+		description = Título da Lista
+	gallery
+		name = lista_slider_img_estampa_02
+		gallery_image = Agregar imagen
+		gallery_titulo = Agregar Titulo
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 260
+		gallery_height = 260
+	i18n_input
+		name = slider_lista_estampa_title_3
+		description = Título da Lista
+	gallery
+		name = lista_slider_img_estampa_03
+		gallery_image = Agregar imagen
+		gallery_titulo = Agregar Titulo
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 260
+		gallery_height = 260
+	i18n_input
+		name = slider_lista_estampa_title_4
+		description = Título da Lista
+	gallery
+		name = lista_slider_img_estampa_04
+		gallery_image = Agregar imagen
+		gallery_titulo = Agregar Titulo
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 260
+		gallery_height = 260
+	i18n_input
+		name = slider_lista_estampa_title_5
+		description = Título da Lista
+	gallery
+		name = lista_slider_img_estampa_05
+		gallery_image = Agregar imagen
+		gallery_titulo = Agregar Titulo
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 260
+		gallery_height = 260
+	collapse
 		title = Banners promocionales
 	description
 		description = Los banners se mostrarán de izquierda a derecha en computadoras y de arriba hacia abajo en celulares
