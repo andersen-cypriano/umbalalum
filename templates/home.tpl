@@ -104,7 +104,6 @@
 
 				{#  **** Estampas ****  #}
 				{% include 'snipplets/home/home-estampas.tpl' %}
-				{% include 'snipplets/home/home-estampas-lista.tpl' %}
 
 			{% elseif section_select == 'promotional' %}
 

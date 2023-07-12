@@ -32,6 +32,7 @@
                             </span>
                             {% endif %}
                         </p>
+                        <a href="/account/logout" class="btn-logout">Sair</a>
                     </div>
                     {% if customer.default_address %}
                     <div class="box p-3">

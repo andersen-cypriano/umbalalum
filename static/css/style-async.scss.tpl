@@ -2270,6 +2270,17 @@ section.section-estampas-home-lista {
   } 
 }
 
+// MINHA CONTA
+.account-page {
+  .btn-logout {
+    margin: 2rem 0!important;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #A44F73;
+  }
+}
+
 // PAGINA CATEGORIA
 .js-category-controls {
   .breadcrumbs {

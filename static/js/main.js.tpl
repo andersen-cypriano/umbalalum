@@ -233,25 +233,3 @@ const startObserve = () => {
 document.querySelector(
   "section.category-body .js-product-table"
 ) ? startObserve() : null;
-
-// HOME
-
-const initSliderEstampas = () => {
-  document.querySelectorAll('.content-lista-sliders > div').forEach(element => {
-    $(element).slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        }
-      ]
-    })
-  })
-  console.log('initSlider Estampas')
-}
-document.querySelector('.section-estampas-home-lista') ? initSliderEstampas() : null;
