@@ -1,3 +1,6 @@
+{# Gift Packaging - Leonam Bernini #}
+{% include "snipplets/gift-packaging.tpl" %}
+
 {# Check if store has free shipping without regions or categories #}
 
 {% set has_free_shipping = cart.free_shipping.cart_has_free_shipping or cart.free_shipping.min_price_free_shipping.min_price %}

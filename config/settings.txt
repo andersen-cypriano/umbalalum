@@ -122,7 +122,41 @@ Tipo de diseño
 	checkbox
 		name = icons_solid
 		description = Usar íconos gruesos
+Embalagem personalizada
+	meta
+		icon = gift
+		advanced = true
+	checkbox
+		name = lb_gift_packaging
+		description = Habilitar opção de embalagem no carrinho?
+	i18n_input
+		name = lb_gift_packaging_product
+		description = ID do produto utilizado como embalagem
 
+	title
+		title = Personalização
+	subtitle
+		subtitle = Textos
+	i18n_input
+		name = lb_gift_packaging_msg
+		description = Mensagem para seleção da embalagem no carrinho
+	i18n_input
+		name = lb_gift_packaging_msg_cta
+		description = Mensagem do botão para adicionar a embalagem
+	subtitle
+		subtitle = Cores
+	color
+		name = lb_gift_packaging_box_bg
+		description = Cor de fundo da caixa de Mensagem
+	color
+		name = lb_gift_packaging_title_color
+		description = Cor do titulo
+	color
+		name = lb_gift_packaging_cta_bg
+		description = Cor de fundo do botão
+	color
+		name = lb_gift_packaging_cta_text
+		description = Cor do texto do botão
 Encabezado
 	meta
 		icon = arrow-up

@@ -1,3 +1,4 @@
+{% set is_gift_item = item.product.id == settings.lb_gift_packaging_product %}
 <div class="js-cart-item {% if item.product.is_non_shippable %}js-cart-item-non-shippable{% else %}js-cart-item-shippable{% endif %} {% if cart_page %}row align-items-md-center{% else %}cart-item form-row{% endif %}" data-item-id="{{ item.id }}" data-store="cart-item-{{ item.product.id }}" data-component="cart.line-item">
 
   {% set show_free_shipping_label = item.product.free_shipping and not (cart.free_shipping.cart_has_free_shipping or cart.free_shipping.min_price_free_shipping.min_price) %}
@@ -39,7 +40,7 @@
 
           {# Cart item subtotal #}
           <h5 class="js-cart-item-subtotal {% if cart_page %}col-5 col-md-2 text-right text-md-center mb-0 mt-2 h4-md{% else %}cart-item-subtotal h6  mr-5{% endif %}" data-line-item-id="{{ item.id }}" data-component="subtotal.value" data-component-value={{ item.subtotal | money }}'>{{ item.subtotal | money }}</h5>
-        <div class="cart-item-quantity box-quantidade {% if cart_page %}col-7 col-md-3 text-center{% endif %}" data-component="line-item.subtotal">
+        <div class="cart-item-quantity box-quantidade {% if cart_page %}col-7 col-md-3 text-center{% endif %}" style="{% if is_gift_item %}display: none;{% endif %}" data-component="line-item.subtotal">
           {% embed "snipplets/forms/form-input.tpl" with{
             type_number: true, 
             input_value: item.quantity, 

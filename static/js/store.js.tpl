@@ -93,6 +93,52 @@ lazySizesConfig.hFac = 0.4;
 
 
 $(document).ready(function(){
+    {# /* // Gift Packaging - Leonam Bernini */ #}
+    {% if settings.lb_gift_packaging and settings.lb_gift_packaging_product != '' %}
+        function ajustGiftPackagingActions(){
+            var $gift_packaging_cart_item = $('.js-cart-item[data-store="cart-item-{{ settings.lb_gift_packaging_product }}"]');
+            if( $('.js-lb-gift-packaging-options').length ){
+                if( $gift_packaging_cart_item.length || !$('.js-cart-item').length ){
+                    $('.js-lb-gift-packaging-options').fadeOut();
+                }else{
+                    $('.js-lb-gift-packaging-options').fadeIn();
+                }
+            }
+        }
+
+        $(document).on('click', '.js-lb-gift-packaging-add', function(){
+            var $this = $(this);
+            var ctaText = $this.html();
+            var $box = $this.closest('.js-lb-gift-packaging-options');
+            var product_id = $box.data('product');
+
+            var $formData = $(
+                '<form method="post" action="/comprar/">'+
+                '   <input type="hidden" name="add_to_cart" value="'+product_id+'">'+
+                '   <input type="number" name="quantity" value="1">'+
+                '</form>'
+            );
+            LS.addToCartEnhanced(
+                $formData,
+                ctaText,
+                '',
+                '',
+                true,
+                function(){ ajustGiftPackagingActions()},
+                function(){ ajustGiftPackagingActions() },
+            );
+            return false;
+        });
+
+        $(document).on('DOMNodeInserted DOMNodeRemoved', '.js-ajax-cart-list', function() {
+            setTimeout( function(){
+                ajustGiftPackagingActions();
+            }, 500);
+        });
+        setTimeout( function(){
+            ajustGiftPackagingActions();
+        }, 1000);
+    {% endif %}
 
 	{#/*============================================================================
 	  #Notifications and tooltips
