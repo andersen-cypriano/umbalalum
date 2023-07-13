@@ -1,4 +1,15 @@
+function disableVariant (item, variant) {
+  document.querySelectorAll(`[data-quickshop-id=${item.getAttribute('data-quickshop-id')}] .select-items > div`)
+  .forEach(element => element.textContent  == variant ? element.classList.add('variant-soldoff') : null)
+}
 
+
+function checkVariantSoldOff () {
+  document.querySelectorAll('.js-item-product > .js-product-container').forEach(item => {
+    const data = JSON.parse(item.getAttribute('data-variants'));
+    data.forEach(element => element.available ?  null : disableVariant(item, element.option0))
+  });
+}
 
 
 
@@ -87,11 +98,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   );
-
-  
-
-
-  
+  function disableVariant (item, variant) {
+    document.querySelectorAll(`[data-quickshop-id=${item.getAttribute('data-quickshop-id')}] .select-items > div`)
+    .forEach(element => element.textContent  == variant ? element.classList.add('variant-soldoff') : null)
+  }
+  document.querySelector('.js-item-product') ? checkVariantSoldOff () : null;
 });
 
 
@@ -129,6 +140,8 @@ setInterval(() => {
 
 // ANDERSEN
 
+
+
 // Filters Category
 function activeButtonsFilters () {
   document.querySelectorAll('.abre-fecha').forEach(element => {
@@ -160,7 +173,8 @@ function checkVariantTamanho () {
 
   window.addEventListener('scroll', ()=> {
     addListenerOnButtonSize();
-    document.querySelectorAll('.js-color-variants-container').forEach(element => element.remove())
+    document.querySelectorAll('.js-color-variants-container').forEach(element => element.remove());
+    checkVariantSoldOff ();
   })
 }
 document.querySelector('.content-variant-tamanho') || document.querySelector('.js-color-variants-container') ? checkVariantTamanho () : null;
@@ -213,6 +227,8 @@ const checkNewItems = () => {
   });
 };
 
+
+
 const startObserve = () => {
   const productListTarget = document.querySelector(
     "section.category-body .js-product-table"
@@ -222,6 +238,9 @@ const startObserve = () => {
   const observer = new MutationObserver(function (mutations) {
     mutations.forEach(function (mutation) {
       checkNewItems();
+      setTimeout(() => {
+        checkVariantSoldOff ();
+      }, 1000);
     });
   });
   
