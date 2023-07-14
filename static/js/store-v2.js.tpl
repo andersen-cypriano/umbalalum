@@ -564,7 +564,7 @@ DOMContentLoaded.addEventOrExecute(() => {
                 
                 // If they scrolled down and are past the navbar, add class .move-up.
                 if (st > lastScrollTop && st > navbarHeight){
-                    jQueryNuvem(".js-head-main").addClass('compress').css('top', (- topbarHeight).toString() + 'px' );
+                    jQueryNuvem(".js-head-main").addClass('compress');
                     if (window.innerWidth < 768) {
                     	$category_controls.css('top', (navbarHeight - topbarHeight - 2).toString() + 'px' );
                 	}

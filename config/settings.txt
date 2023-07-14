@@ -354,6 +354,16 @@ Página de inicio
 		name = banner_services_04_url
 		description = Link
 	collapse
+		title = SESSAO DEPOIMENTOS
+	gallery
+		name = imgesdepoimentos_desktop
+		description = Imagens para desktop
+		gallery_image = Agregar imagen desktop
+	gallery
+		name = imgesdepoimentos_mobile
+		description = Imagens para mobile
+		gallery_image = Agregar imagen mobile
+	collapse
 		title = Artigos destaques na home
 	checkbox
 		name = artigos_home

@@ -5,10 +5,10 @@
     {% set logo_dimensions = store.logo_dimensions() %}
     {% set width = logo_dimensions ? logo_dimensions.width : null %}
     {% set height = logo_dimensions ? logo_dimensions.height : null %}
-    {{ store.logo('medium') | img_tag(store.name, {class: 'logo-img  transition-soft', width: width, height: height}) | a_tag(store.url) }}
+    {{ store.logo('medium') | img_tag(store.name, {class: 'logo-img  transition-soft', width: width, height: height}) | a_tag("https://www.umbalalum.com") }}
 </div>
 <div id="no-logo" class="logo-text-container {% if has_logo %} hidden{% endif %}">
-    <a class="logo-text h5 h3-md" href="{{ store.url }}">{{ store.name }}</a>
+    <a class="logo-text h5 h3-md" href="https://www.umbalalum.com">{{ store.name }}</a>
 </div>
 {% if template == 'home' %}
     </h1>

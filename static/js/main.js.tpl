@@ -184,6 +184,9 @@ function addSearchWord () {
   const word = window.location.href.split('?q=')[1];
   const pharse = document.querySelector('.page-header > .container .text-primary').textContent + ` para ${word}`;
   document.querySelector('.page-header > .container .text-primary').textContent = pharse;
+
+  // remove barra de total de itens exibidos
+  window.matchMedia("(max-width: 768px)").matches ? document.querySelector('.total_prod').remove() : null;  
 }
 
 window.location.pathname == '/search/' ? addSearchWord () : null;
@@ -252,3 +255,23 @@ const startObserve = () => {
 document.querySelector(
   "section.category-body .js-product-table"
 ) ? startObserve() : null;
+
+
+function createSliderDepoimentos () {
+  const contentDesktop = document.querySelector('.content-desktop');
+  const contentMobile = document.querySelector('.content-mobile');
+  const optionSlick = {
+      autoplay: true
+  }
+  if(window.matchMedia("(max-width: 768px)").matches) {
+      document.querySelector('.content-sessao-depoimentos').style.display = 'block';
+      contentDesktop.remove();
+      $(contentMobile).slick(optionSlick);
+  } else {
+      document.querySelector('.content-sessao-depoimentos').style.display = 'block';
+      contentMobile.remove();
+      $(contentDesktop).slick(optionSlick);
+  }
+}
+
+document.querySelector('.content-sessao-depoimentos') ? createSliderDepoimentos () : null;

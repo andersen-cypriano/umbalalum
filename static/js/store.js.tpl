@@ -603,8 +603,7 @@ $(document).ready(function(){
                 
                 // If they scrolled down and are past the navbar, add class .move-up.
                 if (st > lastScrollTop && st > 10){
-                    console.log('MAIOR QUE 10');
-                    $(".js-head-main").addClass('compress').css('top', - topbarHeight );
+                    $(".js-head-main").addClass('compress');
                     if ($(window).width() < 768) {
                     	$category_controls.css('top', (navbarHeight - topbarHeight - 2) );
                 	}
