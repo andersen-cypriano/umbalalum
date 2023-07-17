@@ -275,3 +275,29 @@ function createSliderDepoimentos () {
 }
 
 document.querySelector('.content-sessao-depoimentos') ? createSliderDepoimentos () : null;
+
+function initSliderEstampas () {
+  document.querySelector('.section-estampas-home').removeAttribute('style')
+  document.querySelectorAll('.content-lists > div').forEach(element => {
+    $(element).slick({
+    infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true
+          }
+        }
+      ]
+    })
+  })
+}
+
+// document.querySelector('.content-lists') ? initSliderEstampas() : null;
+
+
+

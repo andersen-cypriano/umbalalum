@@ -2204,6 +2204,50 @@ section.section-estampas-home-lista {
 
 .section-estampas-home {
   padding-top: 3rem;
+  .content-lists {
+    width: 80%;
+    margin: 0 auto;
+    > div {
+      display: flex!important;
+      position: relative;
+      .item_estampa {
+        a {
+          display: block;
+          padding: 1rem;
+          img {
+            width: 100%
+          }
+        }
+      }
+      button.slick-arrow {
+        position: absolute!important;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 300!important;
+      }
+      .slick-prev {
+        left: 10px;
+        font-size: .01rem;
+        color: transparent;
+        border: 0;
+        width: 20px;
+        height: 20px;
+        background: url("{{ 'images/arrow-left.svg' | static_url }}") center center no-repeat;
+        background-size: contain;
+      }
+      
+      .slick-next {
+        right: 10px;
+        font-size: .01rem;
+        color: transparent;
+        border: 0;
+        width: 20px;
+        height: 20px;
+        background: url("{{ 'images/arrow-right.svg' | static_url }}") center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
 }
 
 .section-nav-categories {
