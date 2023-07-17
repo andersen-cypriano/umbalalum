@@ -2204,6 +2204,80 @@ section.section-estampas-home-lista {
 
 .section-estampas-home {
   padding-top: 3rem;
+  h3 {
+    text-align: center;
+  }
+  ul.menu-estampas {
+    margin: 0 0 2rem 0!important;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem!important;
+    .item-selecionado {
+      background-color: var(--cor_verde_1);
+      color: #FFF;
+      transition: all .1s;
+    }
+    li {
+      border-radius: 20px;
+      border: 2px solid var(--cor_verde_1);
+      font-size: 16px;
+      padding: 2px 15px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  .content-lists {
+    width: 80%;
+    margin: 0 auto;
+    .selected-list {
+      height: auto!important;
+    }
+    > div {
+      display: flex!important;
+      position: relative;
+      overflow: hidden;
+      height: 0;
+      .item_estampa {
+        a {
+          display: block;
+          padding: 1rem;
+          img {
+            width: 100%
+          }
+        }
+      }
+      button.slick-arrow {
+        position: absolute!important;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 300!important;
+      }
+      .slick-prev {
+        left: 10px;
+        font-size: .01rem;
+        color: transparent;
+        border: 0;
+        width: 20px;
+        height: 20px;
+        background: url("{{ 'images/arrow-left.svg' | static_url }}") center center no-repeat;
+        background-size: contain;
+      }
+      
+      .slick-next {
+        right: 10px;
+        font-size: .01rem;
+        color: transparent;
+        border: 0;
+        width: 20px;
+        height: 20px;
+        background: url("{{ 'images/arrow-right.svg' | static_url }}") center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
 }
 
 .section-nav-categories {
@@ -2789,7 +2863,32 @@ footer {
     width: 100%;
   }
   .section-estampas-home {
-    display: none!important;
+    ul.menu-estampas {
+      gap: 0.5rem !important;
+      flex-wrap: wrap;
+      li {
+        font-size: 13px;
+        padding: 10px 5px;
+        text-align: center;
+        cursor: pointer;
+        width: 30%;
+        margin-bottom: .5rem!important;
+      }
+    }
+    .content-lists {
+      width: 98%;
+      > div {
+        .item_estampa {
+          a {
+            display: block;
+            padding: 0.2rem!important;
+            img {
+              width: 100%
+            }
+          }
+        }
+      }
+    }
   }
   header {
     .section-topbar {

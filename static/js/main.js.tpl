@@ -98,10 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   );
-  function disableVariant (item, variant) {
-    document.querySelectorAll(`[data-quickshop-id=${item.getAttribute('data-quickshop-id')}] .select-items > div`)
-    .forEach(element => element.textContent  == variant ? element.classList.add('variant-soldoff') : null)
-  }
   document.querySelector('.js-item-product') ? checkVariantSoldOff () : null;
 });
 
@@ -275,3 +271,37 @@ function createSliderDepoimentos () {
 }
 
 document.querySelector('.content-sessao-depoimentos') ? createSliderDepoimentos () : null;
+
+function initSliderEstampas () {
+  document.querySelector('.section-estampas-home').removeAttribute('style')
+  document.querySelectorAll('.content-lists > div').forEach(element => {
+    $(element).slick({
+    infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true
+          }
+        }
+      ]
+    })
+  })
+  document.querySelectorAll('.menu-estampas li').forEach((element, i) => {
+    element.addEventListener('click', ()=> {
+      document.querySelectorAll('.menu-estampas li').forEach(element => element.classList.remove('item-selecionado'));
+      document.querySelectorAll('.selected-list').forEach(element => element.classList.remove('selected-list'));
+      element.classList.add('item-selecionado');
+      document.querySelector('.content-lists').children[i].classList.add('selected-list')
+    })
+  })
+}
+
+document.querySelector('.content-lists') ? initSliderEstampas() : null;
+
+
+

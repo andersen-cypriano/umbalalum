@@ -214,6 +214,326 @@ Encabezado
 		name = ad_url
 		description = Link (opcional)
 
+Lista de estampas
+	collapse
+		title = Lista 01
+	i18n_input
+		name = title_list_01
+		description = Nome da categoria.
+	i18n_input
+		name = estampa_01_url
+		description = Link da imagem 1.
+	image
+		original = estampa_01.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_02_url
+		description = Link da imagem 2.
+	image
+		original = estampa_02.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_03_url
+		description = Link da imagem 3.
+	image
+		original = estampa_03.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_04_url
+		description = Link da imagem 4.
+	image
+		original = estampa_04.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_05_url
+		description = Link da imagem 5.
+	image
+		original = estampa_05.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_06_url
+		description = Link da imagem 6.
+	image
+		original = estampa_06.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	collapse
+		title = Lista 02
+	i18n_input
+		name = title_list_02
+		description = Nome da categoria.
+	i18n_input
+		name = estampa_01_2_url
+		description = Link da imagem 1.
+	image
+		original = estampa_01_2.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_02_2_url
+		description = Link da imagem 2.
+	image
+		original = estampa_02_2.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_03_2_url
+		description = Link da imagem 3.
+	image
+		original = estampa_03_2.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_04_2_url
+		description = Link da imagem 4.
+	image
+		original = estampa_04_2.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_05_2_url
+		description = Link da imagem 5.
+	image
+		original = estampa_05_2.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_06_2_url
+		description = Link da imagem 6.
+	image
+		original = estampa_06_2.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	collapse
+		title = Lista 03
+	i18n_input
+		name = title_list_03
+		description = Nome da categoria.
+	i18n_input
+		name = estampa_01_3_url
+		description = Link da imagem 1.
+	image
+		original = estampa_01_3.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_02_3_url
+		description = Link da imagem 2.
+	image
+		original = estampa_02_3.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_03_3_url
+		description = Link da imagem 3.
+	image
+		original = estampa_03_3.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_04_3_url
+		description = Link da imagem 4.
+	image
+		original = estampa_04_3.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_05_3_url
+		description = Link da imagem 5.
+	image
+		original = estampa_05_3.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_06_3_url
+		description = Link da imagem 6.
+	image
+		original = estampa_06_3.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	collapse
+		title = Lista 04
+	i18n_input
+		name = title_list_04
+		description = Nome da categoria.
+	i18n_input
+		name = estampa_01_4_url
+		description = Link da imagem 1.
+	image
+		original = estampa_01_4.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_02_4_url
+		description = Link da imagem 2.
+	image
+		original = estampa_02_4.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_03_4_url
+		description = Link da imagem 3.
+	image
+		original = estampa_03_4.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_04_4_url
+		description = Link da imagem 4.
+	image
+		original = estampa_04_4.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_05_4_url
+		description = Link da imagem 5.
+	image
+		original = estampa_05_4.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_06_4_url
+		description = Link da imagem 6.
+	image
+		original = estampa_06_4.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	collapse
+		title = Lista 05
+	i18n_input
+		name = title_list_05
+		description = Nome da categoria.
+	i18n_input
+		name = estampa_01_5_url
+		description = Link da imagem 1.
+	image
+		original = estampa_01_5.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_02_5_url
+		description = Link da imagem 2.
+	image
+		original = estampa_02_5.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_03_5_url
+		description = Link da imagem 3.
+	image
+		original = estampa_03_5.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_04_5_url
+		description = Link da imagem 4.
+	image
+		original = estampa_04_5.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_05_5_url
+		description = Link da imagem 5.
+	image
+		original = estampa_05_5.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_06_5_url
+		description = Link da imagem 6.
+	image
+		original = estampa_06_5.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	collapse
+		title = Lista 06
+	i18n_input
+		name = title_list_06
+		description = Nome da categoria.
+	i18n_input
+		name = estampa_01_6_url
+		description = Link da imagem 1.
+	image
+		original = estampa_01_6.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_02_6_url
+		description = Link da imagem 2.
+	image
+		original = estampa_02_6.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_03_6_url
+		description = Link da imagem 3.
+	image
+		original = estampa_03_6.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_04_6_url
+		description = Link da imagem 4.
+	image
+		original = estampa_04_6.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_05_6_url
+		description = Link da imagem 5.
+	image
+		original = estampa_05_6.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+	i18n_input
+		name = estampa_06_6_url
+		description = Link da imagem 6.
+	image
+		original = estampa_06_6.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 1080
+		height = 1080
+
 Página de inicio
 	meta
 		icon = home
@@ -456,31 +776,6 @@ Página de inicio
 		description = Link do Botão
 	i18n_input
 		name = welcome_message_link_text
-		description = Texto do Botão
-	collapse
-		title = Seção Imagem e texto Home
-	i18n_input
-		name = imagem_texto
-		description = Título da Seção
-	i18n_input
-		name = imagem_texto2
-		description = Cor da Seção
-	i18n_input
-		name = imagem_texto3
-		description = Descripción
-	i18n_input
-		name = imagem_texto4
-		description = Frase destaque (em Negrito)
-	image
-		original = imagem_texto_image.jpg
-		title = Banner Full Quem Somos
-		width = 1366
-		height = 533
-	i18n_input
-		name = imagem_texto_link
-		description = Link do Botão
-	i18n_input
-		name = imagem_texto_link_text
 		description = Texto do Botão
 	collapse
 		title = Pop-up promocional
@@ -903,66 +1198,6 @@ Página de inicio
 	i18n_input
 		name = icone_cat_10_url_2
 		description = Link Categoria 10
-	collapse
-		title = Escolha Por ESTAMPAS.
-	description
-		description = Lista tipos de estampas
-	checkbox
-		name = lista_estampa_true
-		description = Exibir sliders com escolha de estampas
-	i18n_input
-		name = secao_estampa_title
-		description = Título da Seção
-	i18n_input
-		name = lista_estampa_title
-		description = Título da Lista
-	gallery
-		name = slider_img_estampa_01
-		gallery_image = Agregar imagen
-		gallery_titulo = Agregar Titulo
-		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
-		gallery_width = 260
-		gallery_height = 260
-	i18n_input
-		name = lista_estampa_title_2
-		description = Título da Lista
-	gallery
-		name = slider_img_estampa_02
-		gallery_image = Agregar imagen
-		gallery_titulo = Agregar Titulo
-		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
-		gallery_width = 260
-		gallery_height = 260
-	i18n_input
-		name = lista_estampa_title_3
-		description = Título da Lista
-	gallery
-		name = slider_img_estampa_03
-		gallery_image = Agregar imagen
-		gallery_titulo = Agregar Titulo
-		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
-		gallery_width = 260
-		gallery_height = 260
-	i18n_input
-		name = lista_estampa_title_4
-		description = Título da Lista
-	gallery
-		name = slider_img_estampa_04
-		gallery_image = Agregar imagen
-		gallery_titulo = Agregar Titulo
-		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
-		gallery_width = 260
-		gallery_height = 260
-	i18n_input
-		name = lista_estampa_title_5
-		description = Título da Lista
-	gallery
-		name = slider_img_estampa_05
-		gallery_image = Agregar imagen
-		gallery_titulo = Agregar Titulo
-		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
-		gallery_width = 260
-		gallery_height = 260
 	collapse
 		title = Banners promocionales
 	description
