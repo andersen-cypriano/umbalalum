@@ -11,6 +11,12 @@
         <!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bad+Script&family=Comic+Neue:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+          #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
         {% if settings.fb_admins %}
             <meta property="fb:admins" content="{{ settings.fb_admins }}" />
         {% endif %}

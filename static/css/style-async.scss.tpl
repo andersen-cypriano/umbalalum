@@ -2569,6 +2569,62 @@ section.category-body {
   }
 }
 
+// MODAL NEWSLETTER
+div[data-modal-id="#home-modal"] {
+  display: none!important;
+}
+#home-modal {
+  background: var(--cor_creme)!important;
+}
+#mc_embed_shell {
+  #mc_embed_signup {
+    width: 100%!important;
+    min-width: 100%!important;
+    max-width: 100%!important;
+    background-color: transparent;
+    form {
+      font-family: var(--font_1);
+      margin: 0;
+      #mc_embed_signup_scroll {
+        h2 {
+          color: var(--cor_chumbo);
+          margin: 0!important;
+          font-family: var(--font_1);
+        }
+        .indicates-required {
+          .asterisk {
+            color: red;
+          }
+          color: var(--cor_chumbo);
+        }
+        .mc-field-group {
+          label {
+            color: var(--cor_chumbo);
+          }
+          input[type="email"], input[type="text"] {
+            font-family: var(--font_1);
+          }
+          .datefield {
+            .small-meta.nowrap {
+              color: var(--cor_chumbo)!important;
+            }
+          } 
+        }
+        .clear {
+          display: flex;
+          justify-content: center;
+          input[type="submit"] {
+            font-family: var(--font_1);
+            background: var(--cor_chumbo);
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
 // MINI CART
 .js-ajax-cart-panel {
   .js-ajax-cart-list {
