@@ -305,3 +305,51 @@ document.querySelector('.content-lists') ? initSliderEstampas() : null;
 
 
 
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length)
+    }
+  }
+  return ""
+}
+
+
+
+function activeNewsletterMt () {
+  document.querySelector('.newsletter-mt').removeAttribute('style');
+  setTimeout(() => {
+    document.querySelector('.newsletter-mt').classList.add('newsletter-mt-show');
+    document.querySelector('.fechar-newsletter-mt').addEventListener('click', ()=>{
+      document.querySelector('.newsletter-mt').classList.remove('newsletter-mt-show');
+      setTimeout(() => {
+        document.querySelector('.newsletter-mt').style.display = 'none';
+        setCookie('newslettermt', true, 14)
+      }, 1000);
+    });
+  }, 1000);
+}
+
+
+function checkCookie() {
+  let username = getCookie("newslettermt");
+  username != "" ? null : activeNewsletterMt();
+}
+document.querySelector('.newsletter-mt') ? checkCookie () : null;
+
+
+
