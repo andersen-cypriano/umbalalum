@@ -1792,6 +1792,11 @@ footer {
 .swiper-slide {
   height: auto!important;
 }
+.section-topbar {
+  a.social-icon {
+    display: none;
+  }
+}
 header {
   > div.container {
     
@@ -2105,7 +2110,7 @@ section[data-store="slider-main"] {
               align-items: center;
               justify-content: center;
               box-shadow: var(--sombra_1);
-              margin: 10px 5px;
+              margin: 5px;
               border: 1px solid var(--cor_creme);
               font-size: 12px;
           }
@@ -2919,7 +2924,7 @@ footer {
       }
     }
     .contact-info {
-      margin-bottom: 0;
+      margin-bottom: 10px;
       svg {
         path {
           fill: #000;
@@ -2931,6 +2936,34 @@ footer {
     }
     h4.h3 {
       display: none;
+    }
+    .content-social-footer {
+      > div {
+        padding: 0!important;
+        a {
+          background-color: transparent;
+          width: 20px;
+          
+        }
+      }
+    }
+  }
+  .divider {
+    position: relative!important;
+    border-bottom: 1px solid rgba($color: #FFFFFF, $alpha: .5)!important;
+    .back-to-top {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      top: -30px;
+      cursor: pointer;
+      transform: rotate(90deg);
+      svg {
+        path {
+          fill: #FFF!important;
+        }
+      }
     }
   }
   .footer-legal.copyright {
@@ -3046,7 +3079,17 @@ footer {
                 }
               }
             }
-            .header-logo {}
+            .header-logo {
+              padding-left: 20% !important;
+              #logo {
+                a {
+                  img.logo-img {
+                    max-height: 68px!important;
+                    height: 68px!important;
+                  }
+                }
+              }
+            }
             .order-last {}
             &:nth-of-type(4) {
               .utilities-container {
@@ -3065,6 +3108,9 @@ footer {
             }
           }
         }
+      }
+      + .container {
+        padding-bottom: 0!important;
       }
     }
     
@@ -3180,13 +3226,20 @@ footer {
     #wl-menu-item-id {
       display: none!important;
     }
+    .js-modal-close {
+      right: 10px!important;
+      top: 32px!important;
+      height: 19px!important;
+      width: 19px!important;
+    }
     > ul.nav-account {
+      max-width: calc(100% - 30px)!important;
       svg {
         position: relative;
         margin-right: 1.2rem;
       }
       .nav-accounts-item {
-        padding-left: 30px!important;
+        padding-left: 47px!important;
         a {
           color: #6a976a!important;
         }
@@ -3196,6 +3249,9 @@ footer {
   #nav-hamburger {
     .modal-with-fixed-footer {
       .modal-scrollable-area {
+        .modal-topbar {
+          display: none!important;
+        }
         .modal-body {
           .nav-primary {
             .nav-list {
@@ -3212,6 +3268,17 @@ footer {
       }
     }
   }
+  .section-artigos-home {
+    .swiper-button-prev, .swiper-button-next {
+      top: 39%!important;
+    }
+    .swiper-button-prev {
+      left: 0;
+    }
+    .swiper-button-next {
+      right: 0;
+    }
+  }
   
   // ESTAMPAS
   .section-estampas-home {
@@ -3219,6 +3286,20 @@ footer {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+    }
+    .content-lists {
+      .slick-list {
+        width: 85%!important;
+        margin: 0 auto!important;
+      }
+      > div {
+        .slick-prev {
+          left: 3px!important;
+        }
+        .slick-next {
+          right: 1px!important;
+        }
+      }
     }
   }
   // HOME ESTAMPAS
@@ -3323,8 +3404,19 @@ footer {
         background-color: var(--cor_azul_1);
       }
     }
+    
   }
+  #filters {
 
+    #content-opt-filters {
+      li {
+        a.btn-link-primary {
+          color: #59677B!important;
+          fill: #59677B!important;
+        }
+      }
+    }
+  }
   // PAGINA DE PRODUTO
   .section-single-product {
     .thumb-mobile {
@@ -3332,10 +3424,41 @@ footer {
       gap: 1rem;
       > a {
         margin: 0!important;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+        border-radius: 5px;
+      }
+    }
+    #product_form {
+      .box-prod-description {
+        #product-description {
+          .wc-tabs-wrapper {
+            width: 100%!important;
+            max-width: 100%!important;
+          }
+        }
       }
     }
   }
-
+  .section-fb-comments {
+    > span {
+      width: 100%;
+      > iframe {
+        html {
+          body {
+            .clearfix {
+              width: 100%!important;
+              textarea {
+                min-width: 100%!important;
+                max-width: 100%!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   // LISTAGEM DE PRODUTO
   .js-item-product .item-actions {
     width: 0!important;

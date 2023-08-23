@@ -1342,7 +1342,7 @@ a {
       background: transparent;
       > .container {
         .summary-total {
-          background: transparent;  
+          background: transparent;
         }
       }
     }

@@ -173,44 +173,6 @@ $body-font: {{ settings.font_rest | raw }};
   #Components
 ==============================================================================*/#}
 
-{# /* // Gift Packaging - Leonam Bernini */ #}
-
-.js-lb-gift-packaging-options{
-  padding: 15px;
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,.14);
-  border-radius: 5px;
-  {% if settings.lb_gift_packaging_box_bg != '' %}
-    background: {{ settings.lb_gift_packaging_box_bg }};
-  {% else %}
-    background: transparent;
-  {% endif %}
-  p{
-    {% if settings.lb_gift_packaging_title_color != '' %}
-      color: {{ settings.lb_gift_packaging_title_color }};
-    {% else %}
-      color: $primary-color;
-    {% endif %}
-  }
-  .btn{
-    {% if settings.lb_gift_packaging_cta_bg != '' %}
-      background: {{ settings.lb_gift_packaging_cta_bg }};
-    {% else %}
-      background: transparent;
-    {% endif %}
-    {% if settings.lb_gift_packaging_cta_text != '' %}
-      color: {{ settings.lb_gift_packaging_cta_text }};
-    {% else %}
-      color: $primary-color;
-    {% endif %}
-    transition: 300ms all;
-    &:hover{
-      {% if settings.lb_gift_packaging_cta_bg != '' %}
-        background: darken({{ settings.lb_gift_packaging_cta_bg }}, 10%);
-      {% endif %}
-    }
-  }
-}
-
 {# /* // Margin and Padding */ #}
 
 %section-margin {

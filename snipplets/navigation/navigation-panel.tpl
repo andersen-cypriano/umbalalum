@@ -17,7 +17,7 @@
                     <!--<li class="nav-accounts-item">{{ "Crear cuenta" | translate | a_tag(store.customer_register_url, '', 'nav-accounts-link') }}</li>-->
                 {% endif %}
                 <li class="nav-accounts-item position-relative" style="padding-left: 0;margin-left: 0;">
-                    {{ "Entrar" | translate | a_tag(store.customer_login_url, '', 'js-login nav-accounts-link') }}            
+                    {{ "Clique aqui e faça seu login" | translate | a_tag(store.customer_login_url, '', 'js-login nav-accounts-link') }}            
                     {% if store.country == 'AR'%}
                         {# Notification badge for quick login on AR stores #}
                         <a data-toggle="#quick-login" class="js-modal-open js-quick-login-badge" style="display: none;">

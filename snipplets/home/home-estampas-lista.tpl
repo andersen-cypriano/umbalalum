@@ -6,7 +6,7 @@
     </ul>
     <div class="content-lista-sliders" id="">
       <div class="lista-1">
-        {% for slide in settings.sliderlista %}
+        {% for slide in settings.slider %}
         {% set slide_img = slide.image | static_url %}
         {% if slide.link is empty %}
         <!-- A imagem não possui link -->

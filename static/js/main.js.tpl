@@ -353,3 +353,15 @@ document.querySelector('.newsletter-mt') ? checkCookie () : null;
 
 
 
+const scrollToTop = () => {
+  document.querySelector('.back-to-top').addEventListener('click', ()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+};
+
+document.querySelector('.back-to-top') ? scrollToTop() : null;
+
+
