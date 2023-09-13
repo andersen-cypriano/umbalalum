@@ -150,7 +150,7 @@ function activeButtonsFilters () {
 document.querySelector('.abre-fecha') ?  activeButtonsFilters () : null;
 
 function addListenerOnButtonSize (){
-  document.querySelectorAll('.content-variant-tamanho .select-items > div').forEach(element => {
+  document.querySelectorAll('.js-item-variants .content-variant-tamanho .select-items > div').forEach(element => {
     element.addEventListener('click', () => {
      element.parentElement.parentElement.parentElement.nextElementSibling.classList.remove('desativado');
      element.parentElement.parentElement.parentElement.nextElementSibling.value = 'Comprar';
@@ -159,7 +159,7 @@ function addListenerOnButtonSize (){
 }
 function checkVariantTamanho () {
   document.querySelectorAll('.js-color-variants-container').forEach(element => element.remove())
-  document.querySelectorAll('.content-variant-tamanho').forEach(element => {
+  document.querySelectorAll('.js-item-variants .content-variant-tamanho').forEach(element => {
     element.parentElement.nextElementSibling.classList.add('desativado');
     element.parentElement.nextElementSibling.value = 'Escolha o tamanho';
   })
@@ -169,11 +169,11 @@ function checkVariantTamanho () {
 
   window.addEventListener('scroll', ()=> {
     addListenerOnButtonSize();
-    document.querySelectorAll('.js-color-variants-container').forEach(element => element.remove());
+    document.querySelectorAll('.js-item-variants .js-color-variants-container').forEach(element => element.remove());
     checkVariantSoldOff ();
   })
 }
-document.querySelector('.content-variant-tamanho') || document.querySelector('.js-color-variants-container') ? checkVariantTamanho () : null;
+document.querySelector('.js-item-variants .content-variant-tamanho') || document.querySelector('.js-item-variants .js-color-variants-container') ? checkVariantTamanho () : null;
 
 // SEARCH PAGE
 function addSearchWord () {

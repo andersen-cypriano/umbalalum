@@ -1896,7 +1896,7 @@ header {
                   // Title column mega menu
                   padding: 0 15px!important;
                   &:nth-of-type(1) {
-                    // background-color: red!important;
+                    
                     
                   }
                   &:nth-of-type(2) {
@@ -2691,6 +2691,16 @@ section.category-body {
       }
     }
   }
+  #product_form {
+    .box-prod-description {
+      #product-description {
+        .wc-tabs-wrapper {
+          width: 100%!important;
+          max-width: 100%!important;
+        }
+      }
+    }
+  }
 }
 
 // MODAL NEWSLETTER
@@ -3430,16 +3440,7 @@ footer {
         border-radius: 5px;
       }
     }
-    #product_form {
-      .box-prod-description {
-        #product-description {
-          .wc-tabs-wrapper {
-            width: 100%!important;
-            max-width: 100%!important;
-          }
-        }
-      }
-    }
+    
   }
   .section-fb-comments {
     > span {
